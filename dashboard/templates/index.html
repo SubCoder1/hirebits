@@ -30,9 +30,11 @@
         <nav class="navbar navbar-light bg-light">
           <form class="form-inline">
             <div id=pad>
-            <button class="btn btn-outline-success" type="button">Log in</button></div>
+              <a class="btn btn-outline-success" href="{% url 'login_view' %}">Log in</a>
+            </div>
             <div id=pad>
-            <button class="btn btn-outline-success" type="button">Sign up</button></div>
+              <a class="btn btn-outline-success" href="{% url 'register_view' %}">Sign up</a>
+            </div>
           </form>
         </nav>
       </div>
