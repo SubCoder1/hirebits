@@ -6,7 +6,8 @@
     <meta charset="utf-8">
     <meta name="author" content="Kodinger">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>My Login Page</title>
+    <meta name=" keywords " content="HireBits, hired, competitve programming, coding, developer, learn coding, begnieer coding, freelancer ">
+    <title>HireBits</title>
     <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/my-login.css' %}">
 </head>
@@ -21,13 +22,14 @@
                     </div>
                     <div class="card fat">
                         <div class="card-body">
-                            <h4 class="card-title">Login</h4>
-                            <form enctype='application/json'>
+                            <h4 class="card-title">Login</h4>   
+                            <form method='POST'>
+                            {% csrf_token %}
                                 <div class="form-group">
-                                    <label for="email">E-Mail Address</label>
-                                    <input id="email" type="email" class="form-control" name="email" value="" required autofocus>
+                                    <label for="email">User Name</label>
+                                    <input id="username" type="text" class="form-control" name="username" required autofocus>
                                     <div class="invalid-feedback">
-                                        Email is invalid
+                                        Username is invalid
                                     </div>
                                 </div>
 
@@ -62,7 +64,7 @@
                         </div>
                     </div>
                     <div class="footer">
-                        All right reserved &copy; Saurav Jaiswal &mdash;
+                         All right reserve &copy; HireBits &mdash;
                     </div>
                 </div>
             </div>

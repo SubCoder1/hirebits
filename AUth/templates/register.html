@@ -7,7 +7,7 @@
     <meta name="author" content="Kodinger">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="author" content="Saurav Jaiswal">
-    <meta name=" keywords " content="html, login, css ">
+    <meta name=" keywords " content="HireBits, hired, competitve programming, coding, developer, learn coding, begnieer coding, freelancer ">
     <meta name="description" content="login page">
     <meta http-equiv="refresh" content="30">
     <title>Login&mdash; Sign in here </title>
@@ -26,94 +26,55 @@
                     <div class="card fat ">
                         <div class="card-body ">
                             <h4 class="card-title ">Register</h4>
-                            <form method="POST " class="my-login-validation " novalidate=" ">
+                            <form method="POST">
+                            {% csrf_token %}
                                 <div class="form-group ">
-                                    <label for="name ">Name</label>
-                                    <input id="name " type="text " class="form-control " name="name " required autofocus>
+                                    <label for="name ">Username</label>
+                                    <input id="username" type="text" class="form-control " name="username" required autofocus>
                                     <div class="invalid-feedback ">
                                         What's your name?
                                     </div>
                                 </div>
 
-                                <div class="form-group ">
-                                    <label for="email ">E-Mail Address</label>
-                                    <input id="email " type="email " class="form-control " name="email " required>
+                                <div class="form-group">
+                                    <label for="email">E-Mail Address</label>
+                                    <input id="email" type="email" class="form-control" name="email" required>
                                     <div class="invalid-feedback ">
                                         Your email is invalid
                                     </div>
                                 </div>
 
-                                <div class="form-group ">
+                                <div class="form-group">
                                     <label for="password ">Password</label>
-                                    <input id="password " type="password " class="form-control " name="password " required data-eye>
-                                    <div class="invalid-feedback ">
+                                    <input id="password" type="password" class="form-control" name="password" required data-eye>
+                                    <div class="invalid-feedback">
                                         Password is required
                                     </div>
                                 </div>
-                                <div class="form-group ">
-                                    <label for="mobile ">Mobile Number</label>
-                                    <input id="mobile " type="number " class="form-control " name="mobile " required>
-                                    <div class="invalid-feedback ">
-                                        Your Mobile number is required
-                                    </div>
-                                </div>
-                                <div class="form-group ">
-                                    <label for="degree ">Degree</label>
-                                    <input id="degree " list="degree" class="form-control " name="degree " required data-eye>
-                                    <datalist id="degree">
-										<option value="Bachelors of engineering">
-										<option value="Bachelors of Science">
-										<option value="Masters of Science">
-										<option value="Masters of engineering">
-										<option value="P.hd">
+    
+                                <div class="form-group">
+                                    <label for="gender">Gender</label>
+                                    <input id="gender" list="gender" class="form-control" name="gender" required data-eye>
+                                    <datalist id="gender">
+										<option value="Male">
+										<option value="Female">
+										<option value="other">
 									</datalist>
-                                    <div class="invalid-feedback ">
-                                        Your degree is required
+                                    <div class="invalid-feedback">
+                                        Your gender is required
                                     </div>
                                 </div>
 
-                                <div class="form-group ">
-                                    <label for="regno ">Register Number</label>
-                                    <input id="regno " type="number " class="form-control " name="regno " required>
-                                    <div class="invalid-feedback ">
-                                        Your Register number is required
-                                    </div>
-                                </div>
-                                <div class="form-group ">
-                                    <label for="rollno ">Roll Number</label>
-                                    <input id="rollno " type="text " class="form-control " name="rollno " required>
-                                    <div class="invalid-feedback ">
-                                        Your Roll number is required
-                                    </div>
-                                </div>
-                                <div class="form-group ">
-                                    <label for="dept ">Department</label>
-                                    <input id="dept " type="text " class="form-control " name="dept " required>
-                                    <div class="invalid-feedback ">
-                                        Your Year of graduation is required
-                                    </div>
-                                </div>
-
-                                <div class="form-group ">
-                                    <label for="yog ">Year of Gradution</label>
-                                    <input id="yog " type="number " class="form-control " name="yog " required>
-                                    <div class="invalid-feedback ">
-                                        Your Year of graduation is required
-                                    </div>
-                                </div>
-
-                                <div class="form-group ">
-                                    <div class="custom-checkbox custom-control ">
-                                        <input type="checkbox " name="agree " id="agree " class="custom-control-input " required=" ">
-                                        <label for="agree " class="custom-control-label ">I agree to the <a href="# ">Terms and Conditions</a></label>
-                                        <div class="invalid-feedback ">
-                                            You must agree with our Terms and Conditions
-                                        </div>
+                                 <div class="form-group ">
+                                    <label for="bio">Tell me about Yourself</label>
+                                    <input id="bio" type="text" class="form-control " name="bio" required>
+                                    <div class="invalid-feedback">
+                                        Your bio is required
                                     </div>
                                 </div>
 
                                 <div class="form-group m-0 ">
-                                    <button type="submit " class="btn btn-primary btn-block ">
+                                    <button type="submit" class="btn btn-primary btn-block ">
 										Register
 									</button>
                                 </div>
@@ -124,7 +85,7 @@
                         </div>
                     </div>
                     <div class="footer ">
-                        All right reserve &copy; Saurav Jaiswal &mdash;
+                        All right reserve &copy; HireBits &mdash;
                     </div>
                 </div>
             </div>
