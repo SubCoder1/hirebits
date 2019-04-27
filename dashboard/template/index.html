@@ -13,7 +13,7 @@ function scrollWin(x, y) {
     Hirebits</title>
     <style>
         #pad{
-            padding: 20px;
+            padding: 10px;
         }
     </style>
     </head>
@@ -47,16 +47,17 @@ function scrollWin(x, y) {
          </ul>
     <nav class="navbar navbar-light bg-light">
   <form class="form-inline">
-    <button class="btn btn-outline-success" type="button">Log in</button>
-      
-   <button class="btn btn-outline-success" type="button">Sign up</button>
+      <div id=pad>
+          <button class="btn btn-outline-success" type="button">Log in</button></div>
+      <div id=pad>
+          <button class="btn btn-outline-success" type="button">Sign up</button></div>
   </form>
 
           
   </div>
 </nav>
     
-
+<div class="shadow-lg p-3 mb-5 bg-white rounded">
     <div class="jumbotron">
   <h1 class="display-4">Welcome to Hirebits</h1>
   <p class="lead">DESIGN & BUILD HIGH-QUALITY SOFTWARE WITH CROWDSOURCING</p>
@@ -64,10 +65,12 @@ function scrollWin(x, y) {
   <p>Get more work done with the world’s largest network of designers, developers, testers, and data scientists.</p>
   <a class="btn btn-primary btn-lg" href="#" onclick="scrollWin(0, 100)" role="button">Learn more</a>
 </div>
- <div id="pad">
+     </div>
+ <div class="row justify-content-center">
 <div class="row">
     <div class="col-sm-4">
-    <div class="card" style="width: 18rem;" id="pad" >
+        <div class="shadow p-3 mb-5 bg-white rounded">
+    <div class="card"  style="width: 18rem;"  >
       <img src="../static/Assets/Learnc.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Learn</h5>
@@ -75,31 +78,37 @@ function scrollWin(x, y) {
         <a href="#" class="btn btn-primary">Learn More</a>
         </div>
         </div>
+        </div>
     </div>
     
     
     <div class="col-sm-4">
-    <div class="card" style="width: 18rem;" id="pad"  >
+        <div class="shadow p-3 mb-5 bg-white rounded">
+    <div class="card" style="width: 18rem;"   >
   <img src="../static/Assets/Codec.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Code</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" class="btn btn-primary">Learn More</a>
   </div>
+            </div>
 </div>
     </div>
     
     <div class="col-sm-4">
-    <div class="card" style="width: 18rem;" id="pad" >
+        <div class="shadow p-3 mb-5 bg-white rounded">
+    <div class="card" style="width: 18rem;" >
   <img src="../static/Assets/Hirec.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Get Hired</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" class="btn btn-primary">Learn More</a>
   </div>
+            </div>
 </div>
     </div> 
     </div>
-     </div>   
+     </div>
+   
     </body>
 </html>
