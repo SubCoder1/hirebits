@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,8 +11,8 @@
     <meta name="description" content="login page">
     <meta http-equiv="refresh" content="30">
     <title>Login&mdash; Sign in here </title>
-    <link rel=" stylesheet " type="text/css " href="bootstrap/css/bootstrap.min.css ">
-    <link rel=" stylesheet " type="text/css " href="css/my-login.css ">
+    <link rel=" stylesheet " type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel=" stylesheet " type="text/css" href="{% static 'css/my-login.css' %}">
 </head>
 
 <body class="my-login-page ">
@@ -20,7 +21,7 @@
             <div class="row justify-content-md-center h-100 ">
                 <div class="card-wrapper ">
                     <div class="brand ">
-                        <img src="img/logo.png " alt="bootstrap 4 login page ">
+                        <img src="{% static 'img/logo.png' %}" alt="bootstrap 4 login page ">
                     </div>
                     <div class="card fat ">
                         <div class="card-body ">
@@ -117,7 +118,7 @@
 									</button>
                                 </div>
                                 <div class="mt-4 text-center ">
-                                    Already have an account? <a href="index.html ">Login</a>
+                                    Already have an account? <a href="{% url 'login_view' %}">Login</a>
                                 </div>
                             </form>
                         </div>
@@ -129,9 +130,9 @@
             </div>
     </section>
 
-    <script src="js/jquery.min.js "></script>
-    <script src="bootstrap/js/bootstrap.min.js "></script>
-    <script src="js/my-login.js "></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/my-login.js' %}"></script>
 </body>
 
 </html>
