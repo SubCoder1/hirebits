@@ -17,7 +17,7 @@ def login_view(request):
             user.active = True
             user.save()
             login(request, user)
-            return redirect('/admin/')
+            return redirect('/dashboard/')
         else:
             context = { 'error':"Username or Password is incorrect!" }
     return render(request, 'login.html', context=context)
@@ -42,7 +42,7 @@ def register_view(request):
             if user.is_active:
                 login(request, user)
                 #return redirect('/home/')
-                return redirect('/admin/')
+                return redirect('/dashboard/')
     else:
         if form.has_error('username'):
             context['username'] = 'already exists!'
